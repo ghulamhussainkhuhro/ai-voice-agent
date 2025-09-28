@@ -1,0 +1,10 @@
+<!doctype html>
+<html>
+  <body>
+    <h3>Upload audio to /stt</h3>
+    <form action="http://127.0.0.1:8000/stt" method="post" enctype="multipart/form-data">
+      <input type="file" name="file" accept="audio/*" />
+      <button type="submit">Upload & Transcribe</button>
+    </form>
+  </body>
+</html>
