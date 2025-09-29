@@ -1,10 +1,36 @@
-<!doctype html>
-<html>
-  <body>
-    <h3>Upload audio to /stt</h3>
-    <form action="http://127.0.0.1:8000/stt" method="post" enctype="multipart/form-data">
-      <input type="file" name="file" accept="audio/*" />
-      <button type="submit">Upload & Transcribe</button>
-    </form>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Voice Agent</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-container">
+    <h1>Voice Agent</h1>
+
+    <div class="controls">
+      <button id="record-btn">Start Recording</button>
+      <button id="stop-btn" disabled>Stop Recording</button>
+    </div>
+
+    <div class="output">
+      <label for="transcript">Transcript</label>
+      <textarea id="transcript" readonly></textarea>
+
+      <label for="response">Assistant Response</label>
+      <textarea id="response" readonly></textarea>
+    </div>
+
+    <div class="player">
+      <label for="audio-player">Assistant Audio</label>
+      <audio id="audio-player" controls style="display:none;"></audio>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script type="module" src="main.js"></script>
+</body>
 </html>
+

@@ -1,0 +1,49 @@
+/* frontend/style.css */
+
+body {
+  font-family: sans-serif;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f9fafb;
+  color: #111827;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+textarea {
+  width: 90%;
+  max-width: 600px;
+  height: 80px;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  resize: none;
+  background: #fff;
+}
+
+audio {
+  margin-top: 1rem;
+}
